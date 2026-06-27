@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polityka Prywatności – Naturide</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.6; color: #333; }
+        h1 { color: #1a73e8; border-bottom: 2px solid #1a73e8; padding-bottom: 10px; }
+        h2 { color: #444; margin-top: 30px; font-size: 1.15em; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        .placeholder { background: #fff3cd; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #856404; }
+        .lang-switch { text-align: right; margin-bottom: 20px; }
+        .lang-switch a { color: #1a73e8; text-decoration: none; font-weight: bold; }
+        .lang-section { display: none; }
+        .lang-section.active { display: block; }
+        hr { border: none; border-top: 1px solid #ddd; margin: 30px 0; }
+        strong { color: #222; }
+    </style>
+</head>
+<body>
+
+<div class="lang-switch">
+    <a href="#" onclick="showLang('pl'); return false;">PL</a> | 
+    <a href="#" onclick="showLang('en'); return false;">EN</a>
+</div>
+
+<!-- WERSJA POLSKA -->
+<div id="lang-pl" class="lang-section active">
+    <h1>Polityka Prywatności aplikacji Naturide</h1>
+    <p><strong>Ostatnia aktualizacja:</strong> <span class="placeholder"> 27 czerwca 2026</span></p>
+
+    <p>Niniejsza Polityka Prywatności opisuje, jakie dane zbiera aplikacja Naturide („Aplikacja") oraz w jaki sposób są one wykorzystywane.</p>
+    <p>Deweloperem Aplikacji jest <span class="placeholder">Michał Kwiatkowski</span> (<span class="placeholder">mkwiatek.dev@gmail.com</span>).</p>
+
+    <h2>1. Zbierane dane i cel ich zbierania</h2>
+    <ul>
+        <li><strong>Lokalizacja GPS (pierwszoplanowa i w tle).</strong> Aplikacja używa lokalizacji wyłącznie do wyświetlania pozycji na mapie, nagrywania śladu trasy oraz prowadzenia nawigacji zakrętowej. Dane lokalizacyjne <em>nie są</em> wysyłane na serwery dewelopera.</li>
+        <li><strong>Pliki tras i sesji.</strong> Nagrane trasy (GPX) i dane sesji są przechowywane <em>wyłącznie lokalnie na urządzeniu</em> użytkownika. Deweloper nie ma do nich dostępu.</li>
+    </ul>
+
+    <h2>2. Dane wysyłane do serwisów zewnętrznych</h2>
+    <ul>
+        <li><strong>Serwery kafli mapowych</strong> (OpenStreetMap, CARTO, Thunderforest, OpenTopoMap, Esri i inne) – odbierają zapytania o kafle map zawierające współrzędne wyświetlanego obszaru. Są to dane techniczne niezbędne do wyświetlenia mapy; nie zawierają żadnych danych osobowych.</li>
+        <li><strong>Nominatim (wyszukiwarka adresów OSM)</strong> – przy wyszukiwaniu adresu wysyłane jest zapytanie tekstowe do nominatim.openstreetmap.org. Brak danych osobowych.</li>
+        <li><strong>GraphHopper / OpenRouteService (planowanie tras)</strong> – używane wyłącznie jeśli użytkownik samodzielnie poda własny klucz API. Zapytanie zawiera tylko punkty trasy, bez żadnych danych identyfikujących użytkownika.</li>
+        <li><strong>BRouter</strong> – aplikacja do planowania tras offline instalowana oddzielnie. Komunikacja odbywa się wyłącznie lokalnie, na urządzeniu.</li>
+    </ul>
+
+    <h2>3. Dane, których Aplikacja nie zbiera</h2>
+    <p>Aplikacja <strong>nie zbiera, nie przechowuje ani nie udostępnia:</strong></p>
+    <ul>
+        <li>imienia, nazwiska, adresu e-mail ani żadnych danych osobowych,</li>
+        <li>danych dotyczących konta Google ani innych kont,</li>
+        <li>danych kontaktów, kalendarza ani wiadomości,</li>
+        <li>danych finansowych ani płatniczych,</li>
+        <li>statystyk użycia ani telemetrii,</li>
+        <li>danych reklamowych (Aplikacja nie zawiera reklam).</li>
+    </ul>
+
+    <h2>4. Uprawnienia systemowe</h2>
+    <ul>
+        <li><strong>ACCESS_FINE_LOCATION / ACCESS_BACKGROUND_LOCATION</strong> – wymagane do prowadzenia nawigacji w tle i nagrywania śladu podczas aktywnej sesji nawigacyjnej, również gdy ekran jest wyłączony.</li>
+        <li><strong>FOREGROUND_SERVICE_LOCATION</strong> – usługa działająca na pierwszym planie wyświetla stałe powiadomienie podczas aktywnej nawigacji.</li>
+        <li><strong>WAKE_LOCK / VIBRATE</strong> – budzenie ekranu i wibracja przy alertach nawigacyjnych (zakręty).</li>
+        <li><strong>Device Administrator (force-lock)</strong> – umożliwia zablokowanie ekranu na żądanie użytkownika podczas nawigacji, przy zachowaniu aktywnego GPS. Uprawnienie nie jest używane do żadnych innych celów administracyjnych.</li>
+        <li><strong>INTERNET</strong> – pobieranie kafli map i opcjonalne korzystanie z serwisów routingowych.</li>
+    </ul>
+
+    <h2>5. Przechowywanie i bezpieczeństwo danych</h2>
+    <p>Wszystkie dane (pliki GPX, preferencje, klucze API) są przechowywane wyłącznie na urządzeniu użytkownika w chronionym obszarze pamięci aplikacji. Deweloper nie ma dostępu do tych danych.</p>
+
+    <h2>6. Dzieci</h2>
+    <p>Aplikacja nie jest skierowana do dzieci poniżej 13. roku życia i świadomie nie zbiera żadnych danych od małoletnich.</p>
+
+    <h2>7. Zmiany Polityki Prywatności</h2>
+    <p>W przypadku istotnych zmian zaktualizujemy datę na górze tego dokumentu. Aktualna wersja zawsze dostępna jest pod adresem poniżej.</p>
+
+    <h2>8. Kontakt</h2>
+    <p>Pytania dotyczące prywatności prosimy kierować na adres:<br>
+    <strong><span class="placeholder">mkwiatek.dev@gmail.com</span></strong></p>
+</div>
+
+<!-- ENGLISH VERSION -->
+<div id="lang-en" class="lang-section">
+    <h1>Privacy Policy – Naturide</h1>
+    <p><strong>Last updated:</strong> <span class="placeholder">June 27, 2026</span></p>
+
+    <p>This Privacy Policy describes what data the Naturide application ("the App") collects and how it is used.</p>
+    <p>The App is developed by <span class="placeholder">Michał Kwiatkowski</span> (<span class="placeholder">mkwiatek.dev@gmail.com</span>).</p>
+
+    <h2>1. Collected Data and Purpose</h2>
+    <ul>
+        <li><strong>GPS location (foreground and background).</strong> The App uses location solely for displaying the position on the map, recording the route track, and providing turn-by-turn navigation. Location data is <em>not</em> sent to the developer's servers.</li>
+        <li><strong>Track and session files.</strong> Recorded tracks (GPX) and session data are stored <em>exclusively locally on the user's device</em>. The developer has no access to them.</li>
+    </ul>
+
+    <h2>2. Data Sent to Third-Party Services</h2>
+    <ul>
+        <li><strong>Map tile servers</strong> (OpenStreetMap, CARTO, Thunderforest, OpenTopoMap, Esri, and others) – receive requests for map tiles containing the coordinates of the displayed area. These are technical data necessary to display the map; they do not contain any personal data.</li>
+        <li><strong>Nominatim (OSM address search)</strong> – when searching for an address, a text query is sent to nominatim.openstreetmap.org. No personal data is included.</li>
+        <li><strong>GraphHopper / OpenRouteService (route planning)</strong> – used only if the user independently provides their own API key. The request contains only route waypoints, without any user-identifying data.</li>
+        <li><strong>BRouter</strong> – an offline route planning app installed separately. Communication occurs exclusively locally, on the device.</li>
+    </ul>
+
+    <h2>3. Data the App Does NOT Collect</h2>
+    <p>The App <strong>does not collect, store, or share:</strong></p>
+    <ul>
+        <li>name, surname, email address, or any personal data,</li>
+        <li>Google account data or other account data,</li>
+        <li>contacts, calendar, or messages,</li>
+        <li>financial or payment data,</li>
+        <li>usage statistics or telemetry,</li>
+        <li>advertising data (the App contains no ads).</li>
+    </ul>
+
+    <h2>4. System Permissions</h2>
+    <ul>
+        <li><strong>ACCESS_FINE_LOCATION / ACCESS_BACKGROUND_LOCATION</strong> – required for background navigation and track recording during an active navigation session, even when the screen is off.</li>
+        <li><strong>FOREGROUND_SERVICE_LOCATION</strong> – a foreground service displays a persistent notification during active navigation.</li>
+        <li><strong>WAKE_LOCK / VIBRATE</strong> – screen wake and vibration for navigation alerts (turns).</li>
+        <li><strong>Device Administrator (force-lock)</strong> – allows the user to lock the screen on request during navigation while keeping GPS active. The permission is not used for any other administrative purposes.</li>
+        <li><strong>INTERNET</strong> – downloading map tiles and optional use of routing services.</li>
+    </ul>
+
+    <h2>5. Data Storage and Security</h2>
+    <p>All data (GPX files, preferences, API keys) is stored exclusively on the user's device in the application's protected memory area. The developer has no access to this data.</p>
+
+    <h2>6. Children</h2>
+    <p>The App is not directed at children under 13 years of age and does not knowingly collect any data from minors.</p>
+
+    <h2>7. Changes to This Privacy Policy</h2>
+    <p>In case of significant changes, we will update the date at the top of this document. The current version is always available at the address below.</p>
+
+    <h2>8. Contact</h2>
+    <p>For privacy-related questions, please contact:<br>
+    <strong><span class="placeholder">mkwiatek.dev@gmail.com</span></strong></p>
+</div>
+
+<script>
+function showLang(lang) {
+    document.querySelectorAll('.lang-section').forEach(el => el.classList.remove('active'));
+    document.getElementById('lang-' + lang).classList.add('active');
+}
+</script>
+
+</body>
+</html>
